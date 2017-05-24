@@ -1,0 +1,39 @@
+{
+  "name": "node-iec",
+  "version": "0.1.0",
+  "description": "A node.js library for https://iec.co.il",
+  "keywords": [
+    "iec",
+    "api",
+    "israel",
+    "wrapper",
+    "library",
+    "electric"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yoavmmn/node-iec"
+  },
+  "scripts": {
+    "build": "babel ./lib --out-dir ./dist",
+    "test": "jest --config .jestrc",
+    "clean": "rm -rf ./dist",
+    "prepublish": "npm test && npm run build"
+  },
+  "author": "Yoav Maman <yoavmmn@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-env": "^2.4.1",
+    "babel-jest": "^20.0.3",
+    "jest": "^20.0.3",
+    "moxios": "^0.4.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.1"
+  }
+}
