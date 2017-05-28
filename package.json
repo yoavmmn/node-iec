@@ -1,6 +1,6 @@
 {
   "name": "node-iec",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A node.js library for https://iec.co.il",
   "keywords": [
     "iec",
@@ -30,6 +30,10 @@
     "babel-cli": "^6.24.1",
     "babel-env": "^2.4.1",
     "babel-jest": "^20.0.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
     "jest": "^20.0.3",
     "moxios": "^0.4.0"
   },

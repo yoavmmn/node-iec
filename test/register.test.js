@@ -1,6 +1,6 @@
 import axios from 'axios';
 import moxios from 'moxios';
-import Client from '../lib/index';
+// import Client from '../lib/index';
 import { endpoints } from '../lib/utils/config';
 import registerContoller from '../lib/utils/register';
 
@@ -18,11 +18,11 @@ test('should fail registering user', (done) => {
   });
 
   registerContoller(axios.create({
-      headers: {
-        'Content-Type': 'text/xml',
-        'Authorization': 'Basic YW5kbW9icDppZWNwQGFuZA=='
-      }
-    }), {
+    headers: {
+      'Content-Type': 'text/xml',
+      Authorization: 'Basic YW5kbW9icDppZWNwQGFuZA=='
+    }
+  }), {
     fullName: null,
     contractNum: 'xxx',
     meterNum: 'xxx',
@@ -38,20 +38,20 @@ test('should register user if details are correct', (done) => {
   moxios.stubRequest(endpoints.register, {
     status: 200,
     response: {
-      "CreateUserResponse": {
-        "CreateUserResult": {
-          "Rc": "OK"
+      CreateUserResponse: {
+        CreateUserResult: {
+          Rc: 'OK'
         }
       }
     }
   });
 
   registerContoller(axios.create({
-      headers: {
-        'Content-Type': 'text/xml',
-        'Authorization': 'Basic YW5kbW9icDppZWNwQGFuZA=='
-      }
-    }), {
+    headers: {
+      'Content-Type': 'text/xml',
+      Authorization: 'Basic YW5kbW9icDppZWNwQGFuZA=='
+    }
+  }), {
     fullName: 'John Doe',
     contractNum: '12345',
     meterNum: '12345',
