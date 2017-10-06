@@ -1,7 +1,7 @@
 {
   "name": "node-iec",
   "version": "0.0.5",
-  "description": "A node.js library for https://iec.co.il",
+  "description": "A node.js library for https://www.iec.co.il",
   "keywords": [
     "iec",
     "api",
