@@ -4,6 +4,8 @@
 
 > A node.js library for https://iec.co.il/
 
+**⚠️ WIP - this repository was made for specific project although it's suitable for production**
+
 ### TODO
 
 - write more tests
