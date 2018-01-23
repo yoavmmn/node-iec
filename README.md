@@ -6,8 +6,12 @@
 
 **⚠️ WIP - this repository was made for specific project although it's suitable for production**
 
-### TODO
+### What's included
+- Register new users
+- Get user's debts history
+- Test user's credintials with login function
 
+### TODO
 - write more tests
 - add more functions
 - write readme
